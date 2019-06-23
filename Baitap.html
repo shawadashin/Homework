@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="auther" content="Trần Kế Hưng">
     <title>Bài tập HTML</title>
 </head>
+<style>
+    h1 {color: red}
+    p {color:deeppink}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #eceded;
+}
+</style>
 <body>
     <h1>
-        Page Heading
+        Page Heading 
     </h1>
-    <h2> 
-        Secondary Text
-
-    </h2>
+    
     <p>
         <img src="../web/img/html-illustration.png" alt="Ảnh">
     </p>
@@ -24,6 +41,74 @@
         Học HTML dễ lắm
     </p>
     <button>Read More</button>
+    <h1>HTML TABLE</h1>
+    <table>
+        <tr>
+            <th>TEST</th>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td rowspan="6">TEST ROWSPAN</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</th>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</th>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+        <tr>
+            <td colspan="4">TEST COLSPAN</td>
+        </tr>
+    </table>
+    <h1>
+        HTML FORM 
+    </h1>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Form đăng ký thẻ thành viên của website</legend>
+        Họ và Tên:<br>
+        <input type="text" name="ten" placeholder="Nguyễn Văn A"> <br>
+        Ngày sinh: <br>
+        <input type="date" name="ngaysinh"> <br>
+        Giới tính: <br>
+        <input type="radio" name="gioitinh" value="Male">Male <br>
+        <input type="radio" name="gioitinh" value="Female">Female <br>
+        <input type="radio" name="gioitinh" value="Other">Other <br>
+        Số điện thoại: <br>
+        <input type="text" name="sodienthoai"><br>
+        Email đăng ký: <br>
+        <input type="text" name="Email" placeholder="example@email.com"> <br>
+        Nhập mật khẩu: <br>
+        <input type="password" name="matkhau" placeholder="Ít nhất 8 chữ số"> <br>
+        <br><br>
+        <input type="submit" value="Đăng Ký">
+        </fieldset>
+
+    </form>
     <p>Posted on June 6, 2019 by <b>Hưng</b></p>
     
 </body>
