@@ -7,12 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trang web của Hưng</title>
     <style>
-        a:link {
-            color: aliceblue;
-            background-color: transparent;
-            text-decoration: none;
-        }
-
         a:visited {
             color: rgb(255, 0, 43);
             background-color: transparent;
@@ -24,6 +18,15 @@
             background-color: aqua;
             text-decoration: underline;
         }
+
+        .div1 {
+            background-color: black;
+            color: white;
+            width: 400px;
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid red;
+        }
     </style>
 </head>
 
@@ -32,13 +35,15 @@
         ĐẦU TIÊN CỦA MÌNH </h1>
     <h2 style="background-color: blue; color: azure">Để biết thêm thông tin vui lòng đăng ký thành viên</h2>
     <a href="dangky.html">Bấm vào đây để đăng ký thành viên</a><br><br>
-    <a href="https://www.w3schools.com/html/default.asp">Nếu bạn muốn học HTML hãy bấm vào đây</a> <br><br>
+    <a href="https://www.w3schools.com/html/default.asp" id="link2">Nếu bạn muốn học HTML hãy bấm vào đây</a> <br><br>
     Đây là facebook của mình <br><br>
     <a href="https://www.facebook.com/shawada.shin" style="color:blue">
         <img src="img/34177451_1701354763313712_4160716681435414528_n.jpg" alt="Ảnh của Hưng">
     </a>
-    <h2>Image Map</h2>
-    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+    <div class="div1">
+        <h2>Image Map</h2>
+        <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+    </div>
     <img src="img/workplace.jpg" alt="Ảnh" usemap="#workmap">
     <map name="workmap">
         <area shape="rect" coords="30,39,272,348" href="laptop.html" alt="laptop">
